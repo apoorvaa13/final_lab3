@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_users_page.css" />
+    <script src="script.js"></script>
+    <title>SysMalloc</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div class="nav-logo">
+          <div class="nav-image" align-items-center>
+            <img src="assets/logo.png" alt="SysMalloc" />
+          </div>
+          <p class="nav-name"><a href="all_questions_page.html">SysMalloc</a></p>
+        </div>
+        <div class="nav-search">
+          <input class="search" type="text" placeholder="Search" />
+        </div>
+        <a class="nav-username" href="user_profile_page.html">username</a>
+        <div class="medal" align-items-center>
+            <img src="assets/medal.png" alt="SysMalloc" />
+          </div>
+          <p class="nav-logout"><a href="index.html">Logout</a></p>
+      </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="all_questions_page.html" >
+                        <span class="icon"><i class="questions"></i></span>
+                        <span class="item">Questions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="all_users_page.html" >
+                        <span class="icon"><i class="users"></i></span>
+                        <span class="item">Users</span>
+                    </a>
+                </li>
+        </div>
+        <div class="main_content_particularquestion">
+          <div class="question">
+            <p class="questiontitle">Question Title</p>
+        </div>
+        
+        <div class="upvote"><img src="assets/upvote.png" id="upvoteimg" onclick="changeImage(1)" /></div>
+        <div class="number"><p class="number_of_upvotes">0</p></div>
+        <div class="downvote"><img src="assets/downvote.png" id="downvoteimg" onclick="changeImage(2)" /></div> 
+        <div class="ques_content">Detailed Question</div>
+        <button class="delete_ques" onclick="return delete_ques()">Delete</button>
+
+            <div class="ML-api">
+              <!-- <div class="translate">Translate to: </div> -->
+              <button type="submit" class="translate" onclick="translate_text()">Translate</button>
+              <!-- <form>
+                <input type="text" onsubmit=""/>
+                <button type="submit" class="translate">Translate</button>
+              </form> -->
+            </div>
+        <div class="post_ans">Post your answer</div>
+        <form class="post_ans_form" onsubmit="return post_ans_func(event)">
+          <textarea type="text" class="post_ans_label" id="post_ans" name="post_ans"></textarea>
+          <button class="post_ans_btn" type="submit">Post your answers</button>
+        </form>
+       <div class="answer_full" >
+          <!-- <div class="answer1">
+            <p class="answer1_content">This is one answer!</p> -->
+        <!-- </div> -->
+              <!-- <div class="upvote1"><img src="assets/upvote.png" id="upvoteimgans" width="20" height="20" onclick="changeImage2(1)" /></div> -->
+        
+        <!-- <div class="number1"><p class="number_of_upvotes">0</p></div>
+        <div class="downvote1"><img src="assets/downvote.png" id="downvoteimgans" width="20" height="20" onclick="changeImage2(2)" /></div>  -->
+      </div>
+           
+      <script>
+        function changeImage(id) {
+              if (id == 1) {
+                if (document.getElementById("upvoteimg").src.split('/')[4] == "upvoteonclick.png") {
+                  document.getElementById("upvoteimg").src = "assets/upvote.png";
+                } else {
+                  document.getElementById("upvoteimg").src = "assets/upvoteonclick.png";
+                }
+                document.getElementById("downvoteimg").src = "assets/downvote.png";
+              } else if (id == 2) {
+                document.getElementById("upvoteimg").src = "assets/upvote.png";
+                if (document.getElementById("downvoteimg").src.split('/')[4] == "downvoteonclick.png") {
+                  document.getElementById("downvoteimg").src = "assets/downvote.png";
+                } else {
+                  document.getElementById("downvoteimg").src = "assets/downvoteonclick.png";
+                } 
+              }
+          }
+          function changeImage2(id) {
+              if (id == 1) {
+                if (document.getElementById("upvoteimgans").src.split('/')[4] == "upvoteonclick.png") {
+                  document.getElementById("upvoteimgans").src = "assets/upvote.png";
+                } else {
+                  document.getElementById("upvoteimgans").src = "assets/upvoteonclick.png";
+                }
+                document.getElementById("downvoteimgans").src = "assets/downvote.png";
+              } else if (id == 2) {
+                document.getElementById("upvoteimgans").src = "assets/upvote.png";
+                if (document.getElementById("downvoteimgans").src.split('/')[4] == "downvoteonclick.png") {
+                  document.getElementById("downvoteimgans").src = "assets/downvote.png";
+                } else {
+                  document.getElementById("downvoteimgans").src = "assets/downvoteonclick.png";
+                } 
+              }
+          }
+               
+      </script>
+            <!-- <div class="ques_content">Detailed Question</div> -->
+
+
+            
+            
+            <!-- <div class="post_ans">Post your answer</div>
+            <form class="post_ans_form" onsubmit="return post_ans(event)">
+              <textarea name="post_ans" id="post_ans" class="post_ans_label"></textarea>
+              <button class="post_ans_btn" type="submit">Post your answer</button>
+            </form>
+            <div class="answers">
+              <div class="particular_ans">
+                  This is one answer!
+              </div>
+            </div> -->
+        </div>
+      </div>
+      <footer>
+        <nav class="footer-nav">
+          <div class="footer-nav-logo">
+            <div class="footer-nav-image" align-items-center>
+              <img src="assets/logo.png" alt="SysMalloc" />
+            </div>
+            <p class="footer-nav-name">SysMalloc</p>
+          </div>
+          <div class="fb"><img src="assets/fb.png" /></div>
+          <div class="twitter"><img src="assets/twitter.png" /></div>
+          <div class="ig"><img src="assets/ig.png" /></div>
+          <div class="linkedin"><img src="assets/linkedin.png" /></div>
+          <div class="sitecredits">site design/logo © 2023 #FFFFFF</div>
+        </nav>
+      </footer>
+    </div>
+    </body>
+  </html>

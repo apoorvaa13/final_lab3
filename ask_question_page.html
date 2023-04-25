@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_users_page.css" />
+    <title>SysMalloc</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div class="nav-logo">
+          <div class="nav-image" align-items-center>
+            <img src="assets/logo.png" alt="SysMalloc" />
+          </div>
+          <p class="nav-name"><a href="all_questions_page.html">SysMalloc</a></p>
+        </div>
+        <div class="nav-search">
+          <input class="search" type="text" placeholder="Search" />
+        </div>
+        <a class="nav-username" href="user_profile_page.html">username</a>
+        <div class="medal" align-items-center>
+            <img src="assets/medal.png" alt="SysMalloc" />
+          </div>
+          <p class="nav-logout"><a href="index.html">Logout</a></p>
+      </nav>
+    </header>
+    <div class="container">
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="all_questions_page.html">
+                    <span class="icon"><i class="questions"></i></span>
+                    <span class="item">Questions</span>
+                </a>
+            </li>
+            <li>
+                <a href="all_users_page.html">
+                    <span class="icon"><i class="users"></i></span>
+                    <span class="item">Users</span>
+                </a>
+            </li>
+    </div>
+    <div class="main_content">
+      <p class="top_ques">Ask a Public Question</p>
+      <form class="ask_ques_form" onsubmit="return ask_ques(event)">
+        <p class="ques_title1">Title</p>
+        <p class="ques_subtitle1">Be specific and imagine you are asking question to another person</p>
+        <input type="text" class="textbox1" name="textbox1">
+        <p class="ques_title2">Specify details of your problem</p>
+        <p class="ques_subtitle2">Introduce the problem and expand on the basis of the title specified above</p>
+        <textarea type="text" class="textbox2" name="textbox2"></textarea>
+        <p class="ques_title3">Tags</p>
+        <p class="ques_subtitle3">Add upto 5 tags to specify what your question is about</p>
+        <input type="text" class="textbox3" name="textbox3">
+        <button class="post_ques">Post Your Question</button>
+    </form>
+    </div>
+  </div>
+    <footer>
+      <nav class="footer-nav">
+        <div class="footer-nav-logo">
+          <div class="footer-nav-image" align-items-center>
+            <img src="assets/logo.png" alt="SysMalloc" />
+          </div>
+          <p class="footer-nav-name">SysMalloc</p>
+        </div>
+        <div class="fb"><img src="assets/fb.png" /></div>
+        <div class="twitter"><img src="assets/twitter.png" /></div>
+        <div class="ig"><img src="assets/ig.png" /></div>
+        <div class="linkedin"><img src="assets/linkedin.png" /></div>
+        <div class="sitecredits">site design/logo © 2023 #FFFFFF</div>
+      </nav>
+    </footer>
+  </body>
+</html>

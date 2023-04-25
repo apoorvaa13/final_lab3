@@ -1,0 +1,820 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-name a {
+  text-decoration: none;
+  color: black;
+}
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(249, 182, 134, 0.49);
+  /* position: fixed; */
+  padding: 2% 5%;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* margin-top: 0vh; */
+}
+
+.container {
+  margin-top: 8vh;
+}
+.nav-image {
+  height: 6vh;
+}
+
+.nav-image img {
+  height: 6vh;
+}
+
+.nav-name {
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 300%;
+  margin-left: -50px;
+}
+
+.nav-search input {
+  background: #f7f9ea;
+  border-radius: 4px;
+  margin-left: 12vw;
+  width: 40vw;
+  height: 5vh;
+}
+
+.nav-username {
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1rem;
+  margin-left: 18vw;
+}
+
+.medal {
+  margin-left: 2vw;
+}
+
+.nav-logout {
+  color: black;
+  font-weight: 550;
+  font-size: 1rem;
+  margin-left: 2vw;
+}
+.nav-logout a {
+  text-decoration: none;
+  color: black;
+}
+
+.main_content .user_search input {
+  background: white;
+  border-radius: 4px;
+  margin-left: 2.2vw;
+  margin-top: 10vh;
+  width: 10vw;
+  height: 4vh;
+}
+
+.main_content {
+  float: right;
+  width: 84%;
+  height: 84vh;
+  position: relative;
+  overflow: scroll;
+}
+
+.top_ques {
+  position: absolute;
+  padding-left: 2vw;
+  padding-top: 2.5vh;
+  font-size: 40px;
+}
+
+.ques_title1 {
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 10vh;
+  font-size: 25px;
+}
+
+.ques_subtitle1 {
+  position: absolute;
+  margin-left: 2.2vw;
+  margin-top: 14vh;
+  font-size: 15px;
+  color: grey;
+}
+
+.textbox1 {
+  position: absolute;
+  margin-left: 2.2vw;
+  margin-top: 17vh;
+  width: 80vw; /* set the width to 100% */
+  height: 5vh; /* set the height */
+  border: 1px solid #ccc; /* set the border */
+  background-color: #fff; /* set the background color */
+  padding: 10px; /* add some padding */
+  box-sizing: border-box; /* include the border in the box sizing */
+  border-radius: 5px;
+}
+
+.ques_title2 {
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 23vh;
+  font-size: 25px;
+}
+
+.ques_subtitle2 {
+  position: absolute;
+  margin-left: 2.2vw;
+  margin-top: 27vh;
+  font-size: 15px;
+  color: grey;
+}
+
+.textbox2 {
+  position: absolute;
+  margin-left: 2.2vw;
+  margin-top: 30vh;
+  width: 80vw; /* set the width to 100% */
+  height: 40vh; /* set the height */
+  border: 1px solid #ccc; /* set the border */
+  background-color: #fff; /* set the background color */
+  padding: 10px; /* add some padding */
+  box-sizing: border-box; /* include the border in the box sizing */
+  border-radius: 5px;
+}
+
+.ques_title3 {
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 71vh;
+  font-size: 25px;
+}
+
+.ques_subtitle3 {
+  position: absolute;
+  margin-left: 2.2vw;
+  margin-top: 75vh;
+  font-size: 15px;
+  color: grey;
+}
+
+.textbox3 {
+  position: absolute;
+  margin-left: 2.2vw;
+  margin-top: 78vh;
+  width: 80vw; /* set the width to 100% */
+  height: 5vh; /* set the height */
+  border: 1px solid #ccc; /* set the border */
+  background-color: #fff; /* set the background color */
+  padding: 10px; /* add some padding */
+  box-sizing: border-box; /* include the border in the box sizing */
+  border-radius: 5px;
+}
+
+.post_ques {
+  background-color: #24a0ed; /* set the background color */
+  color: white;
+  border: none; /* remove the border */
+  height: 5vh;
+  width: 160px;
+  padding: 10px 10px 10px 10px; /* set the padding */
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 84vh;
+  margin-left: 72vw;
+  margin-right: 1vw;
+}
+.post_ques a {
+  text-decoration: none;
+  font-size: 16px; /* set the font size */
+  color: white; /* set the text color */
+}
+
+.parent {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.particular_user {
+  display: flex;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-right: 10vw;
+  color: grey;
+  break-inside: avoid;
+}
+.particular_username {
+  color: black;
+}
+
+.total_ques {
+  color: grey;
+  margin-top: 10vh;
+  font-size: 2.7vh;
+  margin-left: 2vw;
+  display: flex;
+}
+
+.particular_ques {
+  column-count: 2;
+  column-gap: 2vw;
+  /* float: left; */
+  display: flex;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  width: 77vw;
+}
+.ques_left {
+  text-align: right;
+  break-inside: avoid;
+}
+.ques_upvotes,
+.ques_downvotes,
+.ques_answers {
+  display: flex;
+}
+.ques_right {
+  break-inside: avoid;
+}
+.ques_title {
+  font-size: 20px;
+}
+.ques_askedby {
+  color: grey;
+  /* column-count: 2; */
+  display: flex;
+}
+
+.follow {
+  background-color: #e88419; /* set the background color */
+  color: white;
+  border: none; /* remove the border */
+  padding: 10px; /* set the padding */
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 77vw;
+}
+.edit_profile {
+  background-color: white; /* set the background color */
+  color: black;
+  padding: 10px; /* set the padding */
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 74vw;
+}
+.user_content {
+  margin-top: 5vh;
+  display: flex;
+}
+.user_image {
+  margin-left: 5vw;
+}
+.user_details {
+  margin-left: 4vw;
+}
+.display_name {
+  font-weight: 550;
+  font-size: 30px;
+}
+.display_user {
+  font-weight: 550;
+  font-size: 30px;
+}
+.location {
+  font-weight: 300;
+  font-size: 20px;
+}
+.reputation {
+  font-weight: 300;
+  font-size: 20px;
+}
+.buttons {
+  margin-top: 4vh;
+  margin-left: 3vw;
+}
+.followers {
+  padding: 7px;
+  background-color: #e88419; /* set the background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.following {
+  margin-left: 2vw;
+  padding: 7px;
+  background-color: #e88419; /* set the background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.feed {
+  margin-left: 2vw;
+  padding: 7px;
+  background-color: #e88419; /* set the background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bookmarks {
+  margin-left: 2vw;
+  padding: 7px;
+  background-color: #e88419; /* set the background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.particular_user_image img {
+  height: 80px;
+  width: 80px;
+  padding-right: 1vw;
+  padding-bottom: 2vh;
+}
+
+.heading_stats {
+  margin-left: 3vw;
+  margin-top: 4vh;
+  font-size: 25px;
+  font-weight: 550;
+}
+.box1 {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 1vh;
+  margin-left: 3vw;
+  margin-right: 1vw;
+  display: flex;
+  font-size: 20px;
+}
+.left {
+  justify-content: space-around;
+}
+.right {
+  margin-left: 50vw;
+  justify-content: space-around;
+}
+.heading_user_ques {
+  margin-left: 3vw;
+  margin-top: 4vh;
+  font-size: 25px;
+  font-weight: 550;
+}
+.box2 {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 1vh;
+  margin-left: 3vw;
+  margin-right: 1vw;
+  display: flex;
+  font-size: 20px;
+}
+.heading_user_ans {
+  margin-left: 3vw;
+  margin-top: 4vh;
+  font-size: 25px;
+  font-weight: 550;
+}
+.box3 {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 1vh;
+  margin-left: 3vw;
+  margin-right: 1vw;
+  display: flex;
+  font-size: 20px;
+}
+.edit {
+  margin-left: 3vw;
+  margin-top: 2vh;
+}
+.heading_edit {
+  font-size: 25px;
+}
+.edit_box {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 1vh;
+  /* margin-left: 1vw; */
+  margin-right: 1vw;
+  /* display: flex; */
+  font-size: 18px;
+}
+.edit_box input {
+  width: 40vw;
+  height: 4vh;
+}
+.save_changes {
+  background-color: #24a0ed;
+  color: white;
+  font-size: 18px;
+  border: none; /* remove the border */
+  height: 5vh;
+  width: 160px;
+  padding: 10px; /* set the padding */
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 71vw;
+  margin-right: 1vw;
+}
+
+.ask_ques {
+  background-color: #24a0ed; /* set the background color */
+  border: none; /* remove the border */
+  padding: 10px; /* set the padding */
+  display: inline-block;
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 74vw;
+}
+.ask_ques a {
+  text-decoration: none;
+  font-size: 16px; /* set the font size */
+  color: white; /* set the text color */
+}
+
+.order_btns {
+  float: right;
+  display: flex;
+  margin-right: 0.5vw;
+}
+.order_btns button {
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.sidebar {
+  /* position: sticky; */
+  background: #edede1;
+  float: left;
+  /* position: fixed; */
+  /* margin-top: 8vh; */
+  width: 16%;
+  height: 84vh;
+  padding: 20px 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+  position: relative;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: black;
+  background: rgb(186, 190, 188);
+  border-right: 2px solid rgb(7, 132, 124);
+}
+
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon {
+  color: #0c7db1;
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before {
+  display: block;
+}
+
+.footer-nav {
+  background: rgba(200, 159, 219, 0.91);
+  height: 8vh;
+  width: 100vw;
+  padding: 2% 5%;
+  /* margin-top: 84vh; */
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav-logo {
+  display: flex;
+  align-items: center;
+  height: 300%;
+  margin-left: -50px;
+}
+
+.footer-nav-image {
+  height: 6vh;
+}
+
+.footer-nav-image img {
+  height: 6vh;
+}
+
+.footer-nav-name {
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.fb img {
+  display: flex;
+  align-items: center;
+  margin-left: 70vw;
+  height: 5vh;
+  margin-top: -1.5vh;
+}
+
+.twitter img {
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+  height: 5vh;
+  margin-top: -1.5vh;
+}
+
+.ig img {
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+  height: 5vh;
+  margin-top: -1.5vh;
+}
+
+.linkedin img {
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+  height: 5vh;
+  margin-top: -1.5vh;
+}
+
+.sitecredits {
+  color: white;
+  position: absolute;
+  font-size: 2vh;
+  margin-top: 5.8vh;
+  margin-left: 164vh;
+}
+
+.main_content_particularquestion {
+  padding-left: 1vw;
+  float: right;
+  width: 84%;
+  height: 84vh;
+  position: relative;
+  overflow: scroll;
+}
+
+.questiontitle {
+  position: absolute;
+  padding-left: 4vw;
+  padding-top: 1vh;
+  font-size: 35px;
+  z-index: -1;
+}
+.number_of_upvotes {
+  margin-left: 1vw;
+}
+
+.profiletitle {
+  padding-left: 3vw;
+  padding-top: 1vh;
+  font-size: 33px;
+}
+
+.Follow {
+  background-color: #e88419; /* set the background color */
+  color: white;
+  padding: 10px; /* set the padding */
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 74vw;
+  border: none;
+}
+
+.Unfollow {
+  background-color: #e88419; /* set the background color */
+  color: white;
+  padding: 10px; /* set the padding */
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 74vw;
+  border: none;
+}
+.name_link {
+  text-decoration: none;
+  color: black;
+}
+.q_link {
+  text-decoration: none;
+  color: black;
+}
+.question_asked {
+  column-count: 2;
+  column-gap: 2vw;
+  float: left;
+}
+
+.delete_ques {
+  background-color: #24a0ed; /* set the background color */
+  color: white;
+  border: none; /* remove the border */
+  padding: 10px; /* set the padding */
+  display: inline-block;
+  text-align: center; /* center the text */
+  display: inline-block; /* set the display to inline-block */
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px; /* add some border radius for a rounded look */
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 75vw;
+}
+.delete_ques a {
+  text-decoration: none;
+  font-size: 16px; /* set the font size */
+  color: white; /* set the text color */
+}
+
+.ques_content {
+  margin-left: 5vw;
+  margin-top: 3vh;
+}
+.post_ans {
+  margin-left: 5vw;
+  margin-top: 8vh;
+  font-size: 20px;
+}
+.particular_ans {
+  margin-left: 5vw;
+  margin-top: 10vh;
+  width: 74vw;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.parent_ques {
+  margin-top: 12vh;
+  margin-left: 2vw;
+  /* display: block; */
+}
+
+.post_ans_form {
+  margin-left: 5vw;
+}
+
+.post_ans_label {
+  height: 20vh;
+  width: 74vw;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.ML-api {
+  margin-left: 5vw;
+  margin-top: 3vh;
+}
+
+.main_content_particularquestion {
+  padding-left: 1vw;
+  float: right;
+  width: 84%;
+  height: 84vh;
+  position: relative;
+  overflow: scroll;
+}
+
+.questiontitle {
+  position: absolute;
+  padding-left: 4vw;
+  padding-top: 1vh;
+  font-size: 35px;
+  z-index: -1;
+}
+
+.answer_full {
+  margin-top: 6vh;
+  margin-left: 5vw;
+  width: 74vw;
+}
+
+.particular_answer_posted {
+  column-count: 2;
+  column-gap: 2vw;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+}
+/* .left {
+  break-inside: avoid;
+} */
+.answer1 {
+  break-inside: avoid;
+  /* float: right; */
+}
+.answer1_content {
+  position: absolute;
+  padding-left: 4vw;
+  padding-top: 1vh;
+  font-size: 20px;
+  z-index: -1;
+}
+
+.upvote1 {
+  width: 2vw;
+  height: 2vh;
+}
+
+.downvote1 {
+  width: 4vw;
+  height: 4vh;
+}
+
+.number_of_upvotes {
+  margin-left: 1vw;
+}
+
+.number1 {
+  margin-top: 1vh;
+  margin-left: -0.5vw;
+}
+
+.translate {
+  background-color: #24a0ed; /* set the background color */
+  color: white;
+  border: none; /* remove the border */
+  padding: 10px; /* set the padding */
+  display: inline-block;
+  text-align: center;
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px;
+}
+
+.post_ans_btn {
+  background-color: #24a0ed; /* set the background color */
+  color: white;
+  border: none; /* remove the border */
+  padding: 10px; /* set the padding */
+  display: inline-block;
+  text-align: center;
+  cursor: pointer; /* set the cursor to pointer */
+  border-radius: 5px;
+}
+
+.parent_following {
+  column-count: 3;
+  column-gap: 20vw;
+  margin-left: 3vw;
+  /* float: left; */
+  display: flex;
+}
